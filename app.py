@@ -6,7 +6,7 @@ from langchain_groq import ChatGroq
 def get_human_message(user_message):
     # Initialize Groq LLM
     llm = ChatGroq(   
-        model_name="llama3-8b-8192",        # Groq-supported model
+        model_name="llama-3.1-8b-instant",        # Groq-supported model
         temperature=0.3,
         max_tokens=512
     )
