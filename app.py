@@ -5,8 +5,7 @@ from langchain_groq import ChatGroq
 # Function to get human-like message and score
 def get_human_message(user_message):
     # Initialize Groq LLM
-    llm = ChatGroq(
-        groq_api_key="YOUR_GROQ_API_KEY",   # replace with your Groq API key
+    llm = ChatGroq(   
         model_name="llama3-8b-8192",        # Groq-supported model
         temperature=0.3,
         max_tokens=512
